@@ -25,7 +25,7 @@ progress.config({ /* config method */
 	/*
 	Colors label
 	- black					- green					- blue					- cyan
-	- red						- yello					- magenta				- white
+	- red					- yello					- magenta				- white
 	*/
 	traceText      : true, 		/* shown or hidden */
 	percentage     : true, 		/* shown or hidden */
