@@ -24,8 +24,8 @@ const progress = new Progress(array)
 progress.config({ /* config method */
 	/*
 	Colors label
-	- black					- green					- blue					- cyan
-	- red					- yello					- magenta				- white
+	- black			- green			- blue			- cyan
+	- red			- yellow		- magenta		- white
 	*/
 	traceText      : true, 		/* shown or hidden */
 	percentage     : true, 		/* shown or hidden */
