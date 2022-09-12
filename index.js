@@ -1,7 +1,7 @@
 class Progress {
 
 	data   = []
-	result = []
+	passed = []
 	error  = []
 	colors = {
 		black  : '\x1b[40m',
@@ -29,7 +29,7 @@ class Progress {
 	async run(index = 0) {
 		try {
 			const passed = await this.data[index]()
-			this.result.push(passed)
+			this.passed.push(passed)
 		} catch {
 			const error = `\n\nError : ${typeof this.data[index]} ${this.data[index]} is not a function at index:${index}`
 			this.error.push(error)
@@ -47,7 +47,7 @@ class Progress {
 		if (index < this.data.length - 1) return this.run(index + 1)
 		else process.stdout.write('\n\n')
 
-		return { result : this.result, error : this.error }
+		return { passed : this.passed, error : this.error }
 	}
 
 }
