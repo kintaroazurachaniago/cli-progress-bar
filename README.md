@@ -27,7 +27,7 @@ progress.config({ /* config method */
 	- black					- green					- blue					- cyan
 	- red						- yello					- magenta				- white
 	*/
-	traceText			 : true, 		/* shown or hidden */
+	traceText      : true, 		/* shown or hidden */
 	percentage     : true, 		/* shown or hidden */
 	percentageColor: 'blue', 	/* percentage number background color */
 	barColor       : 'white', /* bar color */
